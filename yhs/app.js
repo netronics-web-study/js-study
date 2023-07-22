@@ -1,3 +1,4 @@
+/*
 const a = 5;
 const b = 2;
 let myname = "형선";
@@ -49,4 +50,41 @@ function devide(firstNumber, secondNumber) {
     console.log(firstNumber / secondNumber);
 }
 plus(45, 798);
-devide(756 / 4);
+de
+
+
+const calculator = {
+    plus: function (a, b) {
+        alert(a + b);
+    },
+    minus: function (a, b) {
+        alert(a - b);
+    },
+    times: function (a, b) {
+        alert(a * b);
+    },
+    devide: function (a, b) {
+        alert(a / b);
+    },
+    power: function (a, b) {
+        alert(a ** b);
+    },
+};
+//return만 하면 console 창에 결과가 안보이지만 alert를 쓰면 보임
+calculator.plus(2, 3);
+calculator.minus(2, 3);
+calculator.times(2, 3);
+calculator.devide(2, 3);
+calculator.power(2, 3);
+
+const age = 91;
+function calculateKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2;
+}
+const krAge = calculateKrAge(age);
+console.log(krAge);
+
+*/
+//conditionals
+const age = prompt("How old are you?");
+console.log(age, parseInt(age));
