@@ -84,7 +84,23 @@ function calculateKrAge(ageOfForeigner) {
 const krAge = calculateKrAge(age);
 console.log(krAge);
 
-*/
+
 //conditionals
 const age = prompt("How old are you?");
 console.log(age, parseInt(age));
+console.log(isNaN(age));
+*/
+const age = parseInt(prompt("How old are you?"));
+if (isNaN(age) || age < 0) {
+    console.log("please write a positive number");
+} else if (age < 18) {
+    console.log("you are too young");
+} else if (age >= 18 && age <= 50) {
+    console.log("you can drink");
+} else if (age > 50 && age <= 80) {
+    console.log("you should excercise");
+} else if (age === 1000) {
+    console.log("wow you are wise");
+} else if (age > 80) {
+    console.log("you can do whatever you want");
+}
