@@ -7,10 +7,13 @@
         <title>Momentum App</title>
     </head>
     <body>
-        <div id="login-form">
-            <input type="text" placeholder="what is your name?" />
+        <form id="login-form">
+            <input required maxlength="15" type="text" placeholder="what is your name" />
             <button>Log In</button>
-        </div>
+            <!--값을 받고 초기화 안되려면? form안에 input 넣기
+            초기화 되는 이유: submit 이후 refresh
+            -->
+        </form>
         <script src="app.js"></script>
     </body>
 </html>
